@@ -48,16 +48,16 @@ Runtime performance, while important for obvious reasons, was secondary to desig
 - Lights are included basically everywhere
 - Biters remain on
 
-This results in a typical UPS/framerate in the low 30s, as played on a fairly capable system (5800X3D + 32GB DDR4-3600 CL16).
+This results in a typical UPS/framerate in the low to mid-30s, as played on a fairly capable system (5800X3D + 32GB DDR4-3600 CL16).
 
-Biters contribute by far the most significant amount of lag - typically 8-9ms per update(!). I experimented with pushing defenses past the pollution cloud by [nuking landfill](https://www.reddit.com/r/factorio/comments/lvtwh3/psa_use_nuclear_weapons_on_landfill_to_reduce/) and artillery outpost creep on a duplicate save, which eventually addressed the issue, but the process was incredibly tedious and the results were surprisingly underwhelming (CPU time saved by eliminating biters was partially counterbalanced with time spent monitoring more turrets and trains on a larger map). So instead of publishing that save, I have published the alternate save game "ILLIAC VIII No Biters," which is identical to the default save except with the following console commands having been run:
+Biters contribute by far the most significant amount of unnecessary lag, by roughly an order of magnitude. I experimented with pushing defenses past the pollution cloud by [nuking landfill](https://www.reddit.com/r/factorio/comments/lvtwh3/psa_use_nuclear_weapons_on_landfill_to_reduce/) and artillery outpost creep on a duplicate save, which eventually addressed the issue, but the process was incredibly tedious and the results were surprisingly underwhelming (CPU time saved by eliminating biters was partially counterbalanced with time spent monitoring more turrets and trains on a larger map). So instead of publishing that save, I have published the alternate save game "ILLIAC VIII No Biters," which is identical to the default save except with the following console commands having been run:
 
 - Delete biters on revealed chunks: `/c local surface=game.player.surface for key, entity in pairs(surface.find_entities_filtered({force="enemy"})) do entity.destroy() end`
 - Remove unrevealed chunks (i.e. those with generated but undiscovered nests): `/c local surface = game.player.surface local force = game.player.force for chunk in surface.get_chunks() do if not force.is_chunk_charted(surface, chunk) then surface.delete_chunk(chunk) end end`
 - Prevent biters from spawning on newly generated chunks: `/c local surface = game.player.surface local mgs = surface.map_gen_settings mgs.autoplace_controls["enemy-base"].size = "none" surface.map_gen_settings = mgs`
 - Disable pollution: `/c for _, surface in pairs(game.surfaces) do surface.clear_pollution() end game.map_settings.pollution.enabled = false`
 
-This alone increases the typical UPS/framerate to just over 50. For this reason, I recommend touring the No Biters save unless you just really want to see the local wildlife get what’s coming to them. 
+This alone bumps the UPS/framerate back up to a perfect 60 with a bit of headroom to spare (on the same computer, assuming it's otherwise unoccupied). For this reason, I recommend touring the No Biters save unless you just really want to see the local wildlife get what’s coming to them. 
 
 ## Rail and Robot Networks
 
