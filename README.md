@@ -4,6 +4,11 @@ A 5.4k SPM Factorio v1.1 Megabase
 
 ![map view](thumbs/mapViewZoom.webp)
 
+- [Blueprint book](https://github.com/Diosjenin/ILLIAC-VIII/blob/main/Blueprint%20Book%202024-08-13.md)
+- [Image gallery](https://imgur.com/a/rrXMwfb)
+- [Reddit discussion](https://www.reddit.com/r/factorio/comments/1exrbj0/illiac_viii_aka_the_base_im_putting_on_my_résumé/)
+- [Save games](https://drive.proton.me/urls/C7PQTQSRYG#0oYdfs1Nfpj3)
+
 ---
 ## Introduction
 
@@ -27,9 +32,11 @@ The following quality-of-life mods were used:
 - [Editor Extensions](https://mods.factorio.com/mod/EditorExtensions) was not used in this save directly, but provided many useful tools for the separate sandbox save in which most of ILLIAC VIII's builds were initially designed.
 - [Even Distribution](https://mods.factorio.com/mod/even-distribution) allows the player to manually distribute ingredients across compatible entities in uniform quantities. Extremely handy for spreading ammo across early-game turret boxes, and for easier manual balancing of ingredients. 
 - [Far Reach](https://mods.factorio.com/mod/far-reach), because _why can't I interact with that thing when it's **RIGHT THERE??**_
+- [Pipe Visualizer](https://mods.factorio.com/mod/PipeVisualizer?from=search) added beautiful clarity to the glamour shots of fluid-heavy builds
 - [Power Grid Comb](https://mods.factorio.com/mod/power-grid-comb) makes wires prettier with a simple click and drag. It's not perfect, but it's a lot better than doing everything by hand.
 - [Rate Calculator](https://mods.factorio.com/mod/RateCalculator) is, in my opinion, the absolute best QoL mod out there: Click and drag over a set of machines and get a pop-up box with all their rates and ratios. Removes almost all of the tedious manual math involved in precise recipe chains, and a lifesaver when modules enter the picture.
 - [Realistic Decoration Cleanup](https://mods.factorio.com/mod/RealisticDecorationCleanup) clears decorative sprites when placing entities. Grasses and such that peek out from the cracks between concrete tiles are a blight on a well-paved base.
+- [Screenshot Toolkit](https://mods.factorio.com/mod/FacAutoScreenshot) allowed for incredibly simple drag-and-click screenshots to create photo albums for this portfolio project
 - [Spidertron Bob Speed](https://mods.factorio.com/mod/spidertron-bob-speed) removes (most of) the inebriated wobbling when a spidertron stops moving. Placing entities or distributing items in a straight line while riding a spidertron is annoyingly inaccurate without this.
 - [Spidertron Enhancements](https://mods.factorio.com/mod/SpidertronEnhancements) has many niceties, but I installed it purely so spidertron inventory would be automatically sorted like the player's. Deconstructing an outpost with spidertrons in the base game often clogs their inventories because items randomly get split into multiple partial stacks, which I honestly believed to be a bug when I first noticed it. (I still don't understand why it isn't considered such, but [that's the official word.](https://forums.factorio.com/viewtopic.php?t=99737))
 - [Squeak Through](https://mods.factorio.com/mod/Squeak%20Through) is one of the most popular QoL mods, and for good reason; while it's understandably "realistic" that players shouldn't be able to walk through pipes and such, that doesn't make it any less infuriating. It is possible that some of my rail-adjacent blueprints may not be placeable without this installed (rail curve interference is defined by the entity bounding boxes that this mod alters), but to be perfectly honest I don't really care.
